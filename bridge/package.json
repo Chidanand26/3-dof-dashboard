@@ -1,0 +1,17 @@
+{
+  "name": "armbench-bridge",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Local serial bridge between the ARMBENCH dashboard and Dynamixel servos on a U2D2 (TTL) bus.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scan": "node scan-cli.js",
+    "test:motion": "node test-all-3.js"
+  },
+  "dependencies": {
+    "serialport": "^12.0.0",
+    "ws": "^8.18.0"
+  }
+}
